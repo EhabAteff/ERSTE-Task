@@ -16,7 +16,7 @@ Scenario Outline: Search results are relevant to the search keyword
     | Liftago  |        7           |
     |   GTH    |        12          |
 
-Scenario Outline: FE displayes non-matching results response when searching using invalid data
+Scenario Outline: FE displays non-matching results response when searching using invalid data
     Given User is at the homepage Url
     When User searches with "<invalidData>"
     Then "Omlouvám se, nic jsem nenašel. Zkuste zadat jiná kritéria." gets displayed in the search results
